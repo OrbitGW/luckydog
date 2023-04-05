@@ -11,8 +11,8 @@ html,body{
     padding: 0;
     margin: 0;
 }
-font{
-  font-family: 'Courier New', Courier, monospace;
+*{
+  font-family: 'Segoe UI';
 }
 a{
   text-decoration: none;
@@ -120,7 +120,6 @@ button:focus {
   top:120px;
   text-align: center;
   font-size: 72px;
-  font-weight: 800;
   line-height: 250px;
 }
 
