@@ -1,0 +1,59 @@
+<!--
+  LUCKYDOG
+  Copyright (C) 2023 Chris Cheng (orbitgw) <orbitgw@foxmail.com>
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <title>Lucky Dog</title>
+  </head>
+  
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-item-left">
+          <div class="navbar-item" title="Home" style="font-size:20px;font-weight: 900;" onclick="window.open('.','_self')">
+            LUCKYDOG
+          </div>
+        </div>
+        <div class="navbar-item-right">
+          <div class="navbar-item navbar-item-right" title="About the project" onclick="alert('coming soon')">
+            About
+          </div>
+          <div class="navbar-item" title="Github Repository" onclick="window.open('https://www.github.com/orbitgw/luckydog/','_blank')">
+            <img src="./imgs/github-logo.svg" alt="GH Logo">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <button class="settings-btn" type="button" onclick="toogleDialog('input', true)"><img src="imgs/settings.svg" width="20px" height="20px" style="position:relative;top:2px"></button>
+      <div class="name-container" id="name-container"></div>
+      <div class="btn-container">
+        <button class="btn" type="button" onclick="start()">Start</button>
+      </div>
+      <div class="footer">luckydog v0.0.1<br>Copyright 2023 Chris Cheng <a href="mailto: orbitgw@foxmail.com" >orbitgw@foxmail.com</a></div>
+    </div>
+
+    <div class="mask" id="input-mask">
+      <div class="dialog" id="input-dialog">
+        <div class="title">Settings</div>
+        <textarea name="names" id="names" cols="5" rows="10" placeholder="Name List..."></textarea>
+        <div class="form-btn-container">
+          <button class="btn" type="button" onclick="confirm()">OK</button>
+          <button class="btn btn-second" type="button" onclick="toogleDialog('input', false)">Close</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
