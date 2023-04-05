@@ -1,4 +1,7 @@
 # LUCKYDOG
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/orbitgw/luckydog)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/orbitgw/luckydog)
+![GitHub](https://img.shields.io/github/license/orbitgw/luckydog)
 
 An app for randomly selecting names
 ## Usage
