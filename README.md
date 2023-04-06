@@ -1,12 +1,20 @@
 # LUCKYDOG
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/orbitgw/luckydog)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/orbitgw/luckydog)
-![GitHub](https://img.shields.io/github/license/orbitgw/luckydog)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/orbitgw/luckydog) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/orbitgw/luckydog) ![GitHub](https://img.shields.io/github/license/orbitgw/luckydog)
 
 An app for randomly selecting names
 ## Usage
 First, press the settings button. Then input the names you wants to be selected randomly. Pay attention to using `\n` to divide names. Finally, you can press `start` to choose the name randomly.
-
+## Build 
+Execute the following command to ensure that you have installed all dependencies at first.
+```bash
+npm install
+```
+Then use the following coomand to build the project.
+```bash
+npm run build
+```
+## Change Logs
+See [CHANGELOGS.md](./CHANGELOGS.md)
 ## License & Copyright
   Copyright (C) 2023 Chris Cheng (orbitgw) <orbitgw@foxmail.com>
 

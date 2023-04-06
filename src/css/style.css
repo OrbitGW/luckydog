@@ -18,6 +18,10 @@ a{
   text-decoration: none;
   color: rgb(122, 164, 255);
 }
+img{
+  -webkit-user-drag: none;
+  user-select: none;
+}
 .navbar{
   z-index: 99;
   position: absolute;
@@ -148,6 +152,7 @@ button:focus {
   text-align: center;
   font-size: 72px;
   line-height: 250px;
+  user-select: none;
 }
 
 .mask {

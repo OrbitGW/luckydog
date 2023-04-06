@@ -6,14 +6,20 @@
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
 */
-let current 
-let timeout
-let interval
+import _ from 'lodash';
+import './css/style.css';
+import './imgs/github-logo.svg';
+import './imgs/settings.svg';
+import './imgs/favicon.png';
+
+let current;
+let timeout;
+let interval;
 window.onload = function () {
   document.querySelector('#name-container').innerHTML = 'You\'re the LuckyDog'
 }
 
-function toogleDialog(id, visible) {
+window.toogleDialog = function(id, visible) {
   if (interval) return
   let mask = document.getElementById(id + '-mask')
   let dialog = document.getElementById(id + '-dialog')
@@ -33,18 +39,17 @@ function toogleDialog(id, visible) {
   }
 }
 
-function confirm() {
+window.confirm = function() {
   let value = document.getElementById('names').value
   if (typeof Storage !== 'undefined') {
     localStorage.setItem('namesString', JSON.stringify(value))
   } else {
     alert('Error: unsupport web storage')
   }
-  toogleDialog('input', false)
+  window.toogleDialog('input', false)
 }
 
-
-function start() {
+window.start = function() {
     document.getElementById('name-container').style.color = 'black'; 
   if (interval) return
   let storage = localStorage.getItem('namesString')
@@ -56,7 +61,7 @@ function start() {
   let len = nameList.length
   let i=0
   interval = setInterval(function () {
-    let random = RandomNumBoth(0, len - 1)
+    let random = window.RandomNumBoth(0, len - 1)
     document.getElementById('name-container').innerHTML = nameList[random]
     i = i+10;
   }, 50+i)
@@ -68,6 +73,6 @@ function start() {
   }, 1000)
 }
 
-function RandomNumBoth(min, max) {
+window.RandomNumBoth = function(min, max) {
   return min + Math.round(Math.random() * (max - min))
 }
