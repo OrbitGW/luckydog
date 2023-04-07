@@ -15,8 +15,10 @@ import './imgs/favicon.png';
 let current;
 let timeout;
 let interval;
+let first;
 window.onload = function () {
-  document.querySelector('#name-container').innerHTML = 'You\'re the LuckyDog'
+  document.querySelector('#name-container').style = 'font-size: 48px;';
+  document.querySelector('#name-container').innerHTML = 'Who will be the Lucky Dog?';
 }
 
 window.toogleDialog = function(id, visible) {
@@ -50,7 +52,7 @@ window.confirm = function() {
 }
 
 window.start = function() {
-    document.getElementById('name-container').style.color = 'black'; 
+  document.getElementById('name-container').style.color = 'black'; 
   if (interval) return
   let storage = localStorage.getItem('namesString')
   
@@ -60,7 +62,12 @@ window.start = function() {
   let nameList = namasString.split('\n').filter(item => item.trim())
   let len = nameList.length
   let i=0
+  
+  document.getElementById('name-container').innerHTML = '';
+  document.querySelector('#name-container').style = 'font-size: 72px;';
+
   interval = setInterval(function () {
+    
     let random = window.RandomNumBoth(0, len - 1)
     document.getElementById('name-container').innerHTML = nameList[random]
     i = i+10;
