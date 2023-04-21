@@ -1,7 +1,11 @@
-# LUCKYDOG
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/orbitgw/luckydog) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/orbitgw/luckydog) ![GitHub](https://img.shields.io/github/license/orbitgw/luckydog)
+<div align="center"> 
+<h1><b>LUCKYDOG</b></h1>
 
-An app for randomly selecting names
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/orbitgw/luckydog"> <img alt="GitHub tag" src="https://img.shields.io/github/v/tag/orbitgw/luckydog"> <img alt="License" src="https://img.shields.io/github/license/orbitgw/luckydog">
+
+A tool that can randomly select names
+</div>
+
 ## Usage
 First, press the settings button. Then input the names you wants to be selected randomly. Pay attention to using `\n` to divide names. Finally, you can press `start` to choose the name randomly.
 ## Build 
