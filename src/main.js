@@ -18,7 +18,7 @@ let interval;
 let first;
 window.onload = function () {
   document.querySelector('#name-container').style = 'font-size: 48px;';
-  document.querySelector('#name-container').innerHTML = 'Who will be the Lucky Dog?';
+  document.querySelector('#name-container').innerHTML = 'LuckyDog';
 }
 
 window.toogleDialog = function(id, visible) {

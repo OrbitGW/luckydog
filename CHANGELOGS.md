@@ -1,6 +1,8 @@
 # Change Logs
 
-## v0.0.2 *(Latest)*
+## v0.1.0 *(Latest)*
+- change layout
+## v0.0.2
 - optimize the project with webpack5
 - fix navbar in mobile
 ## v0.0.1

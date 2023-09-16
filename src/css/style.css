@@ -22,93 +22,29 @@ img{
   -webkit-user-drag: none;
   user-select: none;
 }
-.navbar{
-  z-index: 99;
-  position: absolute;
-  background-color: #fff;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 48px;
-  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
-}
-.navbar-container{
-  position: relative;
 
-  height: 48px;
-  left: 50%;
-  transform: translateX(-50%);
 
-  display: flex;
-}
-
-@media screen and (min-width:1024px){
-  .navbar-container{
-    width: 1024px;
-  }
-}
-@media screen and (min-width:768px) and (max-width:1024px){
-  .navbar-container{
-    width: 768px;
-  }
-}
-@media screen and (min-width:425px) and (max-width:768px){
-  .navbar-container{
-    width: 425px;
-  }
-}
-@media screen and (max-width:425px){
-  .navbar-container{
-    width: 320px;
-  }
-}
-
-.navbar-item-left{
-  display: flex;
-  position: absolute;
-  left: 0px;
-}
-.navbar-item-right{
-  position: absolute;
-  display: flex;
-  right: 0px;
-}
-
-.navbar-item{
-  padding: 0px;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-left: 4px;
-  margin-right: 4px;
-  position: relative;
-  height: 32px;
-  line-height: 32px;
-  top:8px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  user-select: none;
-  -webkit-user-drag: none;
-  display: flex;
-}
-.navbar-item:hover{
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 .main-container {
   position: absolute;
   width: 800px;
   height: 600px;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
+  
+
+}
+.mainbox{
+  width: 100%;
+  height: 500px;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
   border-radius: 16px;
 
 }
 .btn-container {
-  position: absolute;
-  height: 50px;
+  position: relative;
+  height: 80px;
   width: 100%;
-  top:450px;
+  top:40px;
   text-align: center;
 }
 .btn {
@@ -134,7 +70,23 @@ img{
   border-radius: 16px;
   transition: all 0.5s ease-in-out;
 }
+
+.project-link-btn{
+  position: absolute;
+  top:40px;
+  right: 80px;
+  border: none;
+  padding: 0;
+  width: 120px;
+  height: 32px;
+  border-radius: 16px;
+  transition: all 0.5s ease-in-out;
+}
+
 .settings-btn:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.project-link-btn:hover{
   background-color: rgba(0, 0, 0, 0.2);
 }
 button:hover {
@@ -148,7 +100,7 @@ button:focus {
   width: 100%;
   height: 250px;
   /*background-color: #306ef5;*/
-  top:120px;
+  top:80px;
   text-align: center;
   font-size: 72px;
   line-height: 250px;
@@ -209,10 +161,24 @@ button:focus {
   height: 50px;
 }
 .footer{
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  top: 120px;
   width: 100%;
   text-align: center;
   color: #656d78;
   font-size: 12px;
+}
+
+.changelog-container{
+  position: relative;
+  top:20px;
+  width: 100%;
+  height: 120px;
+  
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 12px;
+  box-sizing: border-box;
 }
